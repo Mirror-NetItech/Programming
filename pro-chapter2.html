@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 32px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 400px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+    .pp{
+      text-indent: 20px;
+    }
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 8px 10px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:88%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+    q <a href="programming.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Introduction to programming</a>
+      
+      <a href="pro-chapter1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> What is programming </a>
+      
+      <a href="pro-chapter2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Low-level programming languages</a>
+      
+       <a href="pro-chapter3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> High-level programming languages </a>
+       
+        <a href="pro-chapter4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Program development life cycle</a>
+        
+         <a href="pro-chapter6.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Algorithm</a>
+         
+          <a href="pro-chapter7.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Flowchart</a>
+          <a href="pro-chapter8.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Pseudocode</a>
+           <a href="pro-chapter5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming Terminologies</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+     <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Web Development</a></span>
+     
+      <span class="navv-item"><a href="programming.html" style="color: white; font-weight: bolder">Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Software Development</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+      <span class="navv-item"><a href="" style="font-weight: bolder; color: white;">
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 110%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 40px; margin-right: 0; ">Introduction To Low-level Programming Language</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <h3 class="mainhead">*What is Low-level Programming Languages*:</h3>
+          <p>
+            Is a programming language that is machine dependent that is the language the computer's processor understands.
+          </p>
+          <h4>Examples or Types Of Low-level Programming Language And Why Their Considered Low-level Languages.</h4>
+          <p style="z-index: 1">
+            <table border="1" style="width: 100%; padding: 0; border-spacing: 0; margin-left: 5px; border-radius: 34px; z-index: 2; box-shadow: 2px 3px 4px; font-size: 92%;"  colspan="4" >
+             
+              
+              <tr >
+                <th colspan="1" style="width: 25%; background: lightcyan">Low-level Languages</th>
+                <th colspan="3" style="width: 75%; background: lightsteelblue">Reasons why it's considered low-level. <br>
+                <b style="font-size: 103%; color: indianred">..... is low-level because:</b>
+                </th>
+              </tr>
+              <tr>
+                <td style="background: lightcyan">*Assembly Language*: </td>
+                <td style="background: ">    - It is specific to a particular computer architecture. <br>
+                - It requires manual memory management.</td>
+                
+              </tr>
+              <tr>
+                <td style="background: lightcyan">*C*:</td>
+                <td>    - It is compiled to machine code. <br>
+                - It provides low-level memory management (e.g., pointers, malloc, free).</td>
+              </tr>
+              <tr>
+                <td style="background: lightcyan">*Rust*:</td>
+                <td> - It provides direct access to hardware resources. <br>
+                - It requires manual memory management (though with some safety features).</td>
+                
+              </tr>
+              <tr>
+                <td style="background: lightcyan">*Forth*:</td>
+                <td>    - It provides low-level memory management. <br>
+                - It has a simple syntax that maps directly to machine instructions.</td>
+              </tr>
+              <tr>
+                <td style="background: lightcyan">*Machine Code*:</td>
+                <td>- It is the native language of the computer. <br>
+                - It requires no compilation or interpretation.</td>
+              </tr>
+              <tr >
+                <td colspan="4" style="width: 100%"> <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> 
+	<b style="font-size: 105%; font-weight: bolder;">These languages are considered low-level because they:</b> <br>
+	- Provide direct access to hardware resources. <br>
+- Require manual memory management.
+<br>
+- Are compiled to machine code or are machine code themselves. <br>
+- Have a close relationship with the hardware. <br>
+- Are specific to a particular computer architecture.
+	</div>
+</div></td>
+
+              </tr>
+            </table>
+          </p>
+          
+            <h4>Advantages Of Low-level Programming Languages.</h4>
+          <ul class="ulstyle">
+            
+            <li> Low-level languages are closer to the machine language, which means they can produce highly optimized code that runs fast and efficient.</li>
+            <li>Low-level languages provide direct access to hardware resources, allowing for fine-grained control over system resources.</li>
+            <li>Low-level languages can be used to create custom solutions tailored to specific hardware or software requirements.</li>
+            <li>Low-level languages can be used to create secure systems and applications, as they provide a high degree of control over system resources.</li>
+            <li>Low-level languages are often used in embedded systems, where resources are limited and efficiency is crucial.</li>
+          </ul>
+          <h4>
+           Disadvantages Of Low-level Programming Languages.
+          </h4>
+        <ul class="ulstyle">
+          <li>Low-level languages can be difficult to learn and use, as they require a deep understanding of computer architecture and hardware.</li>
+          <li>Low-level languages require manual memory management, which can lead to memory leaks and other errors if not done correctly.</li>
+          <li>Low-level languages are often specific to a particular hardware platform, making it difficult to port code to other platforms.</li>
+          <li>Low-level languages can require more development time, as they require a higher level of expertise and attention to detail.</li>
+          <li>Low-level languages can be difficult to maintain, as small changes can have significant effects on the entire system.
+</li>
+        </ul>
+        <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Low-level programming languages offer performance, control, and flexibility but require expertise, attention to detail, and can be error-prone and difficult to maintain.</div>
+</div>
+ <h4>Characteristics of Low-level Programming Languages</h4>
+  <p>
+    <ul class="ulstyle">
+      <li><b>*Machine-specific/dependant*:</b> Low-level languages are specific to a particular type of computer or processor. They are designed to work directly with the computer's hardware components.</li>
+      <li><b>*Assembly language*: </b>Low-level languages are often in the form of assembly language, which uses symbolic codes to represent machine-specific instructions.</li>
+      <li><b>*Memory management*:</b> Low-level languages require manual memory management, which means that the programmer is responsible for allocating and deallocating memory for variables and data structures.</li>
+      <li><b>*Direct hardware access*:</b> Low-level languages provide direct access to hardware resources, such as registers, memory, and I/O devices.</li>
+    </ul>
+  </p> <br>
+  <b>Let's now look at what " Machine Language." and " Assembly Language " entails.</b> <br>
+  <h3 class="mainhead">Machine Language:</h3>
+  <p>
+    Is a language that is made up of binary digits ( <b style="color: deepskyblue">0</b>s and <b style="color: deepskyblue">1</b>s ) that the computer reads and interprets directly without any convention.
+  </p>
+  <h4>Advantages Of Machine Language:</h4>
+  <ul class="ulstyle">
+    <li>Machine language makes fast and efficient use of the computer's resources like register since it is directly executed by the CPU.</li>
+    <li>It requires no translator to translate the codes because the code is directly understood by the computer.</li>
+  </ul>
+  <h4>
+   Disadvantages Of Machine Language:
+  </h4>
+  <ul class="ulstyle">
+    <li>Machine language is difficult to edit if an error occured.</li>
+    <li>All operation codes and memory address have to be remembered.</li>
+  </ul>
+  <h3 class="mainhead">Assembly Language:</h3>
+  <p>Assembly language is a language that enable programmers to make use of alphanumeric symbols <b style="color: blue">eg:</b> ( <b>ADD,MOV,JMP</b> ) in place of I.T terms such as ( <b>ADD,MOVE,JUMP</b> ) 
+  instead of binary digits ( <b style="color: deepskyblue">0</b>s and <b style="color: deepskyblue">1</b>s ) to writes instructions and these instructions must be translated into Machine language using an assembler.</p>
+  <h4>Advantages Of Assembly Language:</h4>
+  <ul class="ulstyle">
+    <li>Assembly language is easy to use as compared to Machine language.</li>
+    <li>It is easy to locate and correct errors in a code when errors occurred.</li>
+  </ul>
+  <h4>Disadvantages Of Assembly Languages:</h4>
+  <ul class="ulstyle">
+    <li>Assembly language's programs are not directly executable due to the need of transportation.</li>
+    <li>It requires high level of programming skills and knowledge of computer architecture of the particular machine.</li>
+  </ul>
+  <br>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="pro-chapter1.html" class="prev-button">Previous</a>
+	<a href="pro-chapter3.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+          
+</body>
+
+</html>

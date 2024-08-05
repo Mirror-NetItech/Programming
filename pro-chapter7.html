@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+    .dd:hover > .dd-content {
+      height: 450px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 103%;
+      margin-bottom: 0;
+      margin-top: 2px;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+    .pp{
+      text-indent: 20px;
+    }
+    .phase{
+      font-size: 105%;
+      font-weight: bolder;
+    }
+    
+    /*style for cover contents*/
+           #services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #30257D;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: hidden;
+  height: 200px;
+}
+
+
+
+.bgcard {
+  height: 100%;
+  background-color: lightgray;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.0);
+  height: 450px;
+  border: 1px solid black;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.html{
+  color: #ED6915;
+}
+.html{
+  transition-duration: 3s;
+    z-index: 10000000;
+}
+.card:hover .html {
+  position: static;
+  transform: scale(.75);
+  z-index: 999;
+}
+.card:hover .bgcard {
+  opacity: 0;
+}
+/*Flowchart types*/
+.flotype{
+  width:90%;
+  height: 100px;
+  z-index: 90;
+ margin: 10px;
+  
+  padding-left: 30px;
+  float: right;
+  border-radius: 50px;
+  box-shadow: 4px 3px 6px;
+  zoom: 500px;
+  animation: zoom 4s ease-in-out 4s infinite alternate;
+}
+.flotype:hover{
+  transform: scale(5);
+}
+@keyframes zoom{
+  0%{
+    width:90%;
+    background-color: blue;
+  }
+  50%{
+    position: relative;
+    width:100%;
+    background-color: yellow;
+    left: 8px;
+  }
+  100%{
+    position: relative;
+    width:110%;
+    background-color: red;
+    left:15px;
+  }
+}
+/* Style for flowchart examples images*/
+.floeg{
+  border-radius: 40px;
+  box-shadow: 4px 3px 6px;
+  animation: zo 4s ease-in-out 4s infinite alternate;
+}
+@keyframes zo{
+  0%{
+    width:100%;
+   z-index: 1; 
+  }
+  50%{
+    position: relative;
+    width:110%;
+    z-index: 99;
+    
+  }
+  100%{
+    position: relative;
+    width:118%;
+    z-index: 999;
+    margin-left: 0;
+   
+  }
+}
+/* style for the flowchart example*/
+
+.flowchart {
+    text-align: center;
+}
+
+.oval {
+    width: 40%;
+    height: 50px;
+    background-color: #add8e6;
+    border-radius: 25px;
+    line-height: 50px;
+    margin: 10px auto;
+}
+
+.parallelogram {
+    width: 60%;
+    height: 50px;
+    background-color: #90ee90;
+    transform: skew(-20deg);
+    line-height: 50px;
+    margin: 10px auto;
+}
+
+.rectangle {
+    width: 70%;
+    height: 50px;
+    background-color: #ffcccb;
+    line-height: 50px;
+    margin: 10px auto;
+}
+
+.arrow {
+    font-size: 180%;
+    margin: -5px auto; /* Adjust for better alignment */
+}
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:58%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="programming.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Introduction to programming</a>
+      
+      <a href="pro-chapter1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> What is programming </a>
+      
+      <a href="pro-chapter2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Low-level programming languages</a>
+      
+       <a href="pro-chapter3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> High-level programming languages </a>
+       
+        <a href="pro-chapter4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Program development life cycle</a>
+        
+         <a href="pro-chapter6.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Algorithm</a>
+         
+          <a href="pro-chapter7.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Flowchart</a>
+          <a href="pro-chapter8.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Pseudocode</a>
+           <a href="pro-chapter5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming Terminologies</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Web Development</a></span>
+     
+      <span class="navv-item"><a href="programming.html" style="color: white; font-weight: bolder">Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Software Development</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+      <span class="navv-item"><a href="" style="font-weight: bolder; color: white;">
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 110%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 80px; margin-right: 0; ">Introduction To Flowchart</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <h3 class="mainhead">*What Is Flowchart*:</h3>
+           <p class="p">
+             Is a diagrammatic representation of an algorithm, a step-by-step approach to solving a task.
+             <br>
+             <br style="margin-top:0; margin-bottom: 0">
+             <p class="p">
+               Flowcharts are used to design and document simple processes or programs. Like other types of diagrams, they help visualize the process. <br>
+               Two of the many benefits are flaws and bottlenecks may become apparent. 
+             </p>
+     <p class="p">
+     A flowchart is described as "cross-functional" when the chart is divided into different vertical or horizontal parts, to describe the control of different organizational units. <br>
+     A symbol appearing in a particular part is within  the control of that organizational unit. <br>
+     A cross-functional flowchart allows the author to correctly locate the responsibility for performing an action or making a decision, and to show the responsibility of each organizational unit for different parts of a single process.
+    </p>
+    <br>
+    <p class="p">
+      Flowcharts represent certain aspects of processes and are usually complemented by other types of diagram. <br>
+      <b style="color: blue">For instance</b>, Kaoru Ishikawa defined the flowchart as one of the seven basic tools of quality control, next to the histogram,
+      Pareto chart, check sheet, control chart, cause-and-effect diagram, and the scatter diagram. <br>
+      Similarly, in UML, a standard concept-modeling notation used in software development, the activity diagram, which is a type of flowchart, is just one of many different diagram types.
+    </p>
+    <p class="p">
+      Nassi-Shneiderman diagrams and Drakon-charts are an alternative notation for process flow.
+<br>
+<b style="color:blue">Common alternative names include:</b> flow chart, process flowchart, functional flowchart, process map, process chart, functional process chart, business process model, process model, process flow diagram, work flow diagram, business flow diagram. <br>
+The terms "flowchart" and "flow chart" are used interchangeably. <br>
+
+The underlying graph structure of a flowchart is a flow graph, which abstracts away node types, their contents and other ancillary information.
+    </p>
+           </p>
+           <h4>Let's Uncover The History Behind Flowchart:</h4>
+           <p class="p">
+             The history of flowcharts can be traced back to the late 19th century, with contributions from various pioneers in logic, mathematics, and computer science. 
+             <br>
+     <p class="p">
+    The first structured method for documenting process flow, the "flow process chart", was introduced by Frank and Lillian Gilbreth in the presentation "Process Charts:  <br>
+    First Steps in Finding the One Best Way to do Work", to members of the American Society of Mechanical Engineers (ASME) in 1921.
+    
+    </p>
+  
+    <p class="p">
+      The Gilbreths' tools quickly found their way into industrial engineering curricula.  <br>
+    In the early 1930s, an industrial engineer, Allan H. Mogensen began to train business people in the use of some of the tools of industrial engineering at his Work Simplification Conferences in Lake Placid, New York.<br>
+    
+Art Spinanger, a 1944 graduate of Mogensen's class, took the tools back to Procter and Gamble where he developed their Deliberate Methods Change Program. <br>
+Ben S. Graham, another 1944 graduate, Director of Formcraft Engineering at Standard Register Industrial, applied the flow process chart to information processing with his development of the multi-flow process chart, to present multiple documents and their relationships.
+</p>
+<p class="p">
+
+ In 1947, ASME adopted a symbol set derived from Gilbreth's original work as the "ASME Standard: Operation and Flow Process Charts."
+</p>
+<p class="p">
+Douglas Hartree in 1949 explained that Herman Goldstine and John von Neumann had developed a flowchart (originally, diagram) to plan computer programs.
+</p>
+<p class="p">
+ His contemporary account was endorsed by IBM engineers and by Goldstine's personal recollections.
+</p>
+<p class="p">
+The original programming flowcharts of Goldstine and von Neumann can be found in their unpublished report, "Planning and coding of problems for an electronic computing instrument, Part II, Volume 1" (1947), which is reproduced in von Neumann's collected works.
+<p class="p">
+The flowchart became a popular tool for describing computer algorithms, but its popularity decreased in the 1970s, when interactive computer terminals and third-generation programming languages became common tools for computer programming, since algorithms can be expressed more concisely as source code in such languages. <br>
+Often pseudo-code is used, which uses the common idioms of such languages without strictly adhering to the details of a particular one.
+<br>
+In the early 21st century, flowcharts were still used for describing computer algorithms.
+</p>
+<p class="p">
+ Modern techniques such as UML activity diagrams and Drakon-charts can be considered to be extensions of the flowchart.
+             </p>
+           </p>
+           <h4 style="margin-bottom: 8px;">Types Of Flowchart:</h4>
+       
+            
+      <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"> Flowchart Types</h3>
+        </legend>  <p class="p">
+          Flowcharts come in various types, each serving a specific purpose in visualizing and analyzing different aspects of a process or system. <br>
+          Understanding the common types of flowcharts can help you choose the right one for your needs, whether you're documenting a workflow, designing an algorithm, or managing a complex project. <br>
+          <b>Here are some of the most widely used types of flowcharts:</b>
+        </p>
+        <ul class="ulstyle">
+          <li><b class="phase">Document Flowcharts:</b> Document flowcharts are used to illustrate the flow of documents, such as invoices, purchase orders, or reports, through a system. <br>
+          These flowcharts show the sequence of steps and decision points involved in processing and handling documents within an organization. <br>
+          They can be used to identify potential bottlenecks, inefficiencies, or areas for improvement in the document-handling process.</li>
+          <li><b class="phase">Data Flowcharts:</b> Data flowcharts are used to represent the flow of data within a system. <br>
+          They show how data moves through various processes, transformations, and storage points in a system. <br>
+          Data flowcharts can be used to analyze the flow of information, identify data inputs and outputs, and understand how data is processed and stored within a system. <br>
+          They are commonly used in system analysis and design to model information flow and data processing.</li>
+          <li><b class="phase">System Flowcharts:</b> System flowcharts depict the controls at a physical or resource level within a system. <br>
+          They illustrate the hardware components, software applications, databases, and other resources that make up a system. <br>
+          System flowcharts can be used to understand the overall architecture of a system, including its physical components and how they interact with each other. <br>
+          They are useful for system administrators, IT professionals, and software developers to visualize the structure and components of a system.</li>
+          <li><b class="phase">Program Flowchart:</b> Program flowcharts are used to represent the controls in a program within a system. <br>
+          They illustrate the sequence of steps, decision points, loops, and logic within a computer program. Program flowcharts can be used for program design, debugging, and documentation purposes. <br>
+          They help programmers understand the flow of control within a program and can be used to communicate program logic to other team members or stakeholders.</li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <h4 style="margin-top: 10px; ">Advantages And Disadvantages Of Flowchart:</h4>
+        
+               <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Advantages</h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="phase">It is the most efficient way of communicating the logic of the system.</b> Flowcharts provide a clear and concise visual representation of the logic and processes within a system. <br>
+         They use standardized symbols and arrows to illustrate the flow of information, decision points, and actions, making it easier for stakeholders, including non-technical individuals, to understand the inner workings of a system. <br>
+         This visual representation enhances communication by presenting complex concepts in a more accessible format, facilitating discussions and ensuring a shared understanding among team members.</li>
+         <li><b class="phase">It acts as a guide for a blueprint during the program design.</b> Flowcharts serve as a valuable tool during the program design phase by providing a visual blueprint for the structure and logic of the system. <br>
+         They allow programmers to break down complex algorithms and processes into manageable steps, helping to organize the sequence of operations and decision points. <br>
+         By visually mapping out the program's flow, developers can plan and design their code more effectively, ensuring a logical and efficient implementation.</li>
+         <li><b class="phase">It also helps in the debugging process.</b> Flowcharts aid in the debugging process by enabling developers to trace the flow of execution within a program. <br>
+         When troubleshooting issues or errors, programmers can refer to the flowchart to identify potential problem areas, understand the sequence of operations, and pinpoint bottlenecks or incorrect logic. <br> 
+         This visual representation facilitates a systematic approach to debugging, leading to more efficient and effective error resolution.</li>
+         <li><b class="phase">Using flowcharts we can easily analyze the programs.</b> Flowcharts provide a structured and visual representation of program logic, making it easier for developers to analyze and understand the functionality of a program. <br>
+         By examining the flowchart, programmers can gain insights into the sequence of operations, decision-making processes, and data flow within the program.  <br>
+         This facilitates a comprehensive analysis of the program's structure and behavior, aiding in optimization, enhancement, or modification efforts.
+</li>
+         <li><b class="phase">Flowcharts are good for documentation.</b> Flowcharts are valuable for documenting the logic and processes of a system or program. They provide a clear and standardized visual representation that can be used as part of technical documentation, user manuals, or training materials. Flowcharts serve as an effective means of conveying complex information in a structured and easily understandable format, enhancing the quality and clarity of documentation related to system functionality and programming logic.</li>
+        </ul>
+        <br>
+        <legend><h3 style="font-size: 105%; color: red;">Disadvantages</h3></legend>
+        <ul class="ulstyle">
+          <li>Flowcharts are challenging to draw for large and complex programs.</li>
+          <li>It does not contain the proper amount of details.</li>
+          <li>Flowcharts are very difficult to reproduce.</li>
+          <li>Flowcharts are very difficult to modify.</li>
+        </ul>
+        </fieldset>
+    </div>
+       </div>
+       <h4 style="margin-top: 20px">When To Use Flowcharts:</h4>
+         <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="phase">Process Mapping and Analysis:</b> Flowcharts are ideal for mapping out and analyzing complex processes, such as manufacturing workflows, business procedures, or service delivery sequences. <br>
+         They provide a visual representation of the steps, decision points, and interactions involved in a process, enabling stakeholders to identify inefficiencies, bottlenecks, or opportunities for improvement.</li>
+         <li><b class="phase">System Design and Architecture:</b> Flowcharts are valuable for designing and planning the architecture of software systems, databases, or information systems.<br>
+         They help software developers and system architects visualize the flow of data, control structures, and decision-making processes within the system, aiding in the design and implementation of efficient and logical solutions.</li>
+         <li><b class="phase">Algorithm and Program Logic Representation:</b> Programmers and software developers use flowcharts to illustrate the logic and structure of algorithms, program code, or control flows. <br> Flowcharts provide a visual blueprint for understanding the sequence of operations, conditional statements, loops, and data manipulation within a program, facilitating effective coding and debugging.</li>
+         <li><b class="phase">Decision-Making Processes:</b> Flowcharts are effective tools for visualizing decision trees, alternative paths, and decision-making processes. <br>
+         They are commonly used in business analysis, project management, and risk assessment to represent different options, outcomes, and decision points, helping stakeholders understand the implications of various choices.</li>
+         <li><b class="phase">Training and Documentation:</b> Flowcharts are useful for creating training materials, user guides, and technical documentation. <br>
+         They provide a clear and structured visual representation of processes or systems, making it easier for users to understand complex concepts and procedures.</li>
+         <li><b class="phase">Quality Control and Standard Operating Procedures:</b> Organizations often use flowcharts to document standard operating procedures (SOPs) and quality control processes. <br> 
+         Flowcharts help ensure consistency in operations by providing a standardized visual reference for employees to follow.</li>
+         <li><b class="phase">Troubleshooting and Error Resolution:</b> When diagnosing technical issues or errors within a system or process, flowcharts can be used to trace the flow of operations and identify potential problem areas. <br>
+         They aid in the systematic analysis of issues and contribute to more efficient troubleshooting efforts.</li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <h4 style="margin-top: 15px">Flowchart Symbols And Definitions:</h4>
+         <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+      <p class="p">
+        Flowcharts vary from quickly hand-drawn visualizations to help document or plan a process to comprehensive workflow diagrams created with a designated software. <br>
+        To make it easier for you to understand flowcharts across teams, departments, and even industries, the American National Standards Institute (ANSI) set official standards in the 1960s, which were adopted by the International Organization for Standardization (ISO) in 1970 and are continuously updated and improved. <br> 
+        The latest version of this standard was confirmed in 2019.
+</p>
+<p class="p">
+When reading a flowchart, follow the Western standard, meaning you’ll read it from the top to the bottom and from the left to the right.
+<br>
+
+Let’s take a look at some of the most commonly used flowchart shapes, symbols, names, and meanings.
+      </p>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Common Symbols</h3>
+        </legend>  
+        <ul class="ulstyle">
+          <img src="flotype1.webp" alt="" class="flotype">
+         <li><b class="phase">Flowline:</b> The flowline symbol is used to connect other symbols and show the direction of the process flow.<br>
+         It indicates the sequence of operations and can be labeled to show the specific step or action. <br>
+         Flowlines connect different symbols in the flowchart to illustrate the order in which tasks or activities are performed.
+         </li>
+         <li><b class="phase">Terminator:</b> The terminator symbol represents the start or end of a process within a flowchart.  <br>
+         It is usually depicted as an oval shape with rounded corners. <br>
+         The terminator marks the beginning or end of the process flow and is used to indicate where the process starts or ends.</li>
+         
+        <li><b class="phase">Process:</b> The process symbol represents a specific action or operation within the process flow. <br>
+        It is typically represented by a rectangle with rounded corners. <br>
+        The process symbol indicates a task, action, or operation that takes place within the overall process flow. <br>
+        It can be labeled with a brief description of the task, and may include additional details such as processing time or responsible personnel.
+        </li>
+         <li><b class="phase">Comment:</b> The comment or annotation symbol is used to provide additional information or comments within a flowchart. <br>
+         It is often depicted as a rectangle with a wavy bottom line or a cloud-like shape. <br>
+         Comments or annotations are used to add explanatory notes, clarifications, or additional context to specific steps or processes in the flowchart.</li>
+         
+         <img src="flotype2.webp" alt="flotype2.webp" class="flotype">
+         <li><b class="phase">Decision:</b> The decision symbol is used to represent a point in the process flow where a decision needs to be made. <br>
+         It is typically represented by a diamond shape.  <br>
+         The decision symbol indicates a branching point in the process where different actions may be taken based on certain conditions or criteria.</li>
+         <li><b class="phase">Stored Data:</b> The stored data symbol represents data that is stored in a database, file, or other storage medium within the process flow. <br>
+         It is usually depicted as a rectangle with a double vertical line on one side. <br>
+         The stored data symbol indicates the presence of data that is being accessed or manipulated within the process.</li>
+         <li><b class="phase">"Or" Symbol:</b> The <b>"Or"</b> symbol is used to represent a logical <b>"OR"</b> operation in a decision point within a flowchart. <br> 
+         It is usually depicted as a circle with the letter <b>"O"</b> inside it.  <br>
+         The <b>"Or"</b> symbol indicates that one of multiple conditions can be true for a particular action to be taken.</li>
+         <li><b class="phase">Input/Output:</b> The input/output symbol represents the input or output of data in a process flow. <br>
+         It is typically depicted as a parallelogram shape.  <br>
+         The input/output symbol indicates the transfer of data into or out of the process.</li>
+        
+         
+         
+         
+         
+         <img src="flotype3.webp" alt="flotype3.webp" class="flotype">
+         <li><b class="phase">Display:</b> The display symbol represents the presentation of information or output to a user or system within the process flow. <br>
+         It is usually depicted as a rectangle with a wavy bottom line. <br> 
+         The display symbol indicates the display of information to users or other systems.</li>
+         <li><b class="phase">Document:</b> The document symbol represents a document or report within the process flow. <br>
+         It is typically depicted as a rectangle with a wavy bottom line and folded corner. <br>
+         The document symbol indicates the creation, handling, or processing of documents within the process.</li>
+         
+         <li><b class="phase">Delay:</b>
+          The delay symbol represents a delay or waiting period within the process flow. <br>
+          It is usually depicted as an elongated rectangle. <br>
+          The delay symbol indicates that there is a time interval or waiting period before the next action can take place.</li>
+         <li><b class="phase">Manual Input:</b> The manual input symbol represents manual input of data by a user or operator within the process flow. <br>
+         It is typically depicted as a parallelogram with one side open. <br>
+         The manual input symbol indicates that data is being entered manually into the process.</li>
+        
+         <img src="flotype4.webp" alt="flotype4.webp" class="flotype">
+          <li><b class="phase">Manual Operation:</b> The manual operation symbol represents a manual operation performed by a user or operator within the process flow. <br>
+         It is usually depicted as a trapezoid shape. <br>
+         The manual operation symbol indicates that a specific manual action needs to be performed as part of the process.</li>
+         <li><b class="phase">Off-Page Connector:</b> The off-page connector symbol represents a connection to another part of the flowchart on a different page. <br>
+         It is usually depicted as a small circle with a letter or number inside it.  <br>
+         The off-page connector symbol indicates that the flowchart continues on another page at the designated connection point.</li>
+         <li><b class="phase">On-Page Connector: </b> The on-page connector symbol represents a connection to another part of the flowchart on the same page. <br>
+         It is usually depicted as a small circle with no letter or number inside it. <br>
+         The on-page connector symbol indicates that there is a connection to another part of the flowchart on the same page.</li>
+         <li><b class="phase">Summing Junction Symbol:</b> The summing junction symbol represents the merging of multiple paths in the process flow. <br>
+         It is usually depicted as a circle with multiple arrows entering it from different directions. <br>
+         The summing junction symbol indicates that multiple inputs are being combined into a single output.</li>
+         
+         
+         
+         <img src="flotype5.webp" alt="flotype5.webp" class="flotype">
+         <li><b class="phase">Alternate Process:</b> The alternate process symbol represents an alternative process or action that can be taken in the flowchart. <br>
+         It is typically depicted as a rectangle with slanted sides. <br>
+         The alternate process symbol indicates that there is an alternative course of action that can be followed in the process flow.</li>
+         <li><b class="phase">Predefined Process:</b> The predefined process symbol represents a predefined or standardized process that is used within the overall process flow. <br>
+         It is usually depicted as a rectangle with double vertical lines on one side and an oval on the other side. <br>
+         The predefined process symbol indicates that there is an established procedure or sub-process that is being used within the main process flow.</li>
+         <li><b class="phase">Multiple Documents:</b> The multiple documents symbol represents multiple documents or reports within the process flow. <br>
+         It is typically depicted as multiple rectangles with wavy bottom lines and folded corners. <br>
+         The multiple documents symbol indicates the handling, processing, or generation of multiple documents within the process.</li>
+         <li><b class="phase">Preparation or Initialization:</b> The preparation or initialization symbol represents the preparation or initialization of resources, data, or systems before the main process begins within the flowchart. <br>
+         It is typically depicted as a rectangle with one rounded corner and one squared corner. <br>
+         The preparation or initialization symbol indicates that certain preparations need to be made before the main process can start.</li>
+        </ul>
+        
+        </fieldset>
+        
+    </div>
+       </div>
+       <h4 style="margin-top: 10px;">How to create a flowchart:</h4>
+         <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div> <br>
+      <p class="p">
+        Creating a flowchart may seem daunting at first, but by following these simple steps, you can easily visualize your processes, workflows, or algorithms using a flowchart maker or software. <br>
+        Whether you're creating process charts, a decision flowchart, or a swimlane diagram, this guide will help you get started. <br>
+        So let's say you're designing a flowchart for simple computer program that calculates the area of a rectangle.
+       </p>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"> Step-by-step guide</h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="phase">Define Your Purpose and Scope:</b> Before you begin creating your flowchart, clearly define its purpose and scope.
+         <br>
+         Are you documenting a business process, designing an algorithm, or visualizing a complex workflow? <br>
+         Understanding your goal will help you choose the right type of flowchart and determine the level of detail required. <br>
+         
+         <b class="eg">Example:</b> The purpose of this flowchart is to outline the steps involved in calculating the area of a rectangle given its length and width.
+         </li>
+         <li><b class="phase">Identify ( The Inputs and Outputs ) and Organize Tasks:</b> Gather information about the process, workflow, or system you want to visualize. <br>
+         Brainstorm with team members and stakeholders to identify the key steps, decision points, inputs, and outputs. <br>
+         Use a whiteboard or sticky notes to organize your ideas and create a rough draft of your flowchart, outlining the main steps and structure. 
+         <b class="eg">Example</b> In our case here we need to identify or gather information on what the inputs and outputs for the area of a rectangle program are going to be and the steps the program must follow.<br>
+         
+         Therefore our <br>
+         <table border="10">
+           <tr>
+             <td> <b>Inputs :</b> </td>
+             <td>Length (L), Width (W) </td>
+           </tr>
+           <tr>
+             <td><b>Outputs :</b></td>
+             <td>Area (A)</td>
+           </tr>
+           <tr>
+             <td><b>Steps :</b></td>
+             <td>Start. <br>
+             Get Length (L) from user. <br>
+             Get Width (W) from user <br>
+             Calculate Area (A = L * W). <br>
+             Display Area (A). <br>
+             End.
+             </td>
+           </tr>
+         </table>
+        
+         </li>
+         <li><b class="phase">Select the right flowchart symbols:</b> Familiarize yourself with the standard flowchart symbols and shapes, including connectors, decision points, and end points. <br>
+         Choose the most appropriate symbols based on the type of flowchart you're creating, such as a process flowchart, data flow diagram (DFD), or swimlane diagram. <br>
+         Consistency in symbol usage ensures clarity and readability. <br>
+         
+         <b class="eg">Common flowchart symbols for our program:</b> 
+         <table>
+           <tr>
+             <td><b>Oval :</b></td>
+             <td>Start/End</td>
+           </tr>
+           <tr>
+             <td><b>Rectangle :</b></td>
+             <td>Process step</td>
+           </tr>
+           <tr>
+             <td> <b>Parallelogram :</b></td>
+             <td>Input/Output</td>
+           </tr>
+           <tr>
+             <td><b>Diamond :</b></td>
+             <td>Decision point</td>
+           </tr>
+         </table>
+         </li>
+     <li><b class="phase">Sketch a Rough Draft:</b> Start with a rough sketch on paper. Place the start symbol at the top, followed by each step in order. <br>
+         Connect the symbols with arrows to indicate the flow of the process.<br>
+         Clearly mark decision points and show different paths based on possible outcomes.
+</li>
+<li>
+  <b class="phase">Refine Your Flowchart:</b> Ensure that each step is clearly defined and that the flow is logical.<br>
+  Remove any unnecessary steps or combine similar steps to make the flowchart easier to understand.<br>
+  Make sure all steps, decisions, inputs, and outputs are included.
+</li>
+<li><b class="phase">Draw/Create the Final Version:</b> Use flowchart software or online tools like Microsoft Visio, Lucidchart, or draw.io to create a polished version of your flowchart.<br>
+Use the appropriate symbols and add text to describe each step clearly.<br>
+Ensure consistent use of colors, fonts, and sizes throughout the flowchart. <br>
+<b class="eg" style="font-size: 150%;" >:::::</b> 
+So our final flowchart for the simple computer program that calculates the area of a rectangle. <br>
+Here we go:
+    <div class="flowchart">
+        <div class="oval">Start</div>
+        <div class="arrow">↓</div>
+        <div class="parallelogram">Input Length (L)</div>
+        <div class="arrow">↓</div>
+        <div class="parallelogram">Input Width (W)</div>
+        <div class="arrow">↓</div>
+        <div class="rectangle">Calculate Area (A = L * W)</div>
+        <div class="arrow">↓</div>
+        <div class="parallelogram">Output Area (A)</div>
+        <div class="arrow">↓</div>
+        <div class="oval">End</div>
+    </div>
+</li>
+<li><b class="phase">Implement and Optimize:
+</b> Share your completed flowchart with your team members and stakeholders, and encourage feedback. <br>
+Collaborate to ensure that everyone understands the process or workflow represented in the flowchart. <br>
+Implement the flowchart in your organization and monitor its effectiveness.
+Continuously review and optimize your flowchart based on real-world experience and feedback, making adjustments as needed to improve efficiency and productivity.
+</li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <h4 style="margin-top:10px;">Let's Take A Look At Some More Examples Of Flowcharts:</h4>
+         <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Examples On Flowchart</h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="eg">Example 1 :</b> <b>Draw a flowchart to find the greatest number among the 2 numbers.</b> <br>
+         
+         <h6 style="font-size: 105%; color: blue; font-weight: bold; text-align: center;">Solution:</h6>
+        <div  style=" display: flex;
+  flex-direction: row;
+  width: 93%;
+  ">
+  <div  style="position: absolute;
+
+	left: 45px;
+	width: 3px;
+	height: 320px;
+background-image: url(logo.jpg);"></div>
+  <div style="flex-grow: 5;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0e9f1;">
+    <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px">Algorithm</h6>
+    <ol class="ulstyle">
+      <li>Start</li>
+      <li>Input 2 variables from user</li>
+      <li>Now check the condition If a &gt; b, goto step 4, else goto step 5.</li>
+      <li>Print a is greater, goto step 6</li>
+      <li>Print b is greater</li>
+      <li>Stop</li>
+    </ol>
+    <div style="background: blue">
+       <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px; background: white; margin-right: 0; padding: 0">Flowchart</h6>
+       <img src="floeg1.png" alt="floeg1.png" style="width: 100%;" class="floeg">
+    </div>
+  </div>
+</div>
+         
+         </li>
+         <br>
+         
+         <li><b class="eg">Example 2 :</b>
+         <b>Draw a flowchart to print the input number 5 times.</b> <br>
+          <h6 style="font-size: 105%; color: blue; font-weight: bold; text-align: center;">Solution:</h6>
+             <div  style=" display: flex;
+  flex-direction: row;
+  width: 93%;
+  ">
+  <div  style="position: absolute;
+
+	left: 45px;
+	width: 3px;
+	height: 250px;
+background-image: url(logo.jpg);"></div>
+  <div style="flex-grow: 5;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0e9f1;">
+    <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px">Algorithm</h6>
+    <ol class="ulstyle">
+      <li>Start</li>
+      <li>Input number a</li>
+      <li>Now initialise c = 1</li>
+      <li>Now we check the condition if c <= 5, goto step 5 else, goto step 7.</li>
+      <li>Print a</li>
+      <li> c = c + 1 and goto step 4</li>
+      <li>Stop</li>
+    </ol>
+    <div style="background: blue">
+       <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px; background: white; margin-right: 0; padding: 0">Flowchart</h6>
+       <img src="floeg2.png" alt="" style="width: 100%;" class="floeg">
+    </div>
+  </div>
+</div>
+         </li>
+         
+         <br>
+            <li><b class="eg">Example 3 :</b>
+         <b>Draw a flowchart to print the first 5 multiples of 3.</b> <br>
+          <h6 style="font-size: 105%; color: blue; font-weight: bold; text-align: center;">Solution:</h6>
+             <div  style=" display: flex;
+  flex-direction: row;
+  width: 93%;
+  ">
+  <div  style="position: absolute;
+
+	left: 45px;
+	width: 3px;
+	height: 250px;
+background-image: url(logo.jpg);"></div>
+  <div style="flex-grow: 5;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0e9f1;">
+    <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px">Algorithm</h6>
+    <ol class="ulstyle">
+      <li>Start</li>
+      <li>Now initialise c = 1</li>
+      <li>Now check the condition if c < 6, then goto step 4. Otherwise goto step 6</li>
+      <li>Print 3 * c</li>
+      <li> c += 1. Then goto step 3.</li>
+      <li>End</li>
+    </ol>
+    <div style="background: blue">
+       <h6 style="color: sandybrown; font-size: 105%; margin-left: 5px; background: white; margin-right: 0; padding: 0">Flowchart</h6>
+       <img src="floeg3.png" alt="" style="width: 100%;" class="floeg">
+    </div>
+  </div>
+</div>
+         </li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <br>
+       <br>
+            <!--  <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="pro-chapter6.html" class="prev-button">Previous</a>
+	<a href="pro-chapter8.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+            <script src="pro-chapter7.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js"></script>
+</body>
+
+</html>
+
