@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/*style to create paragraph*/
+.p::first-letter {
+            font-size: 100%;
+            
+            float: left;
+           
+            margin: 0 0 0 10px;
+           
+         }
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 550px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 105%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .eg{
+      font-size: 105%;
+      padding: 0;
+      color: blue;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+    .pp{
+      text-indent: 20px;
+    }
+    .phase{
+      font-size: 105%;
+      font-weight: bolder;
+    }
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:58%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="programming.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Introduction to programming</a>
+      
+      <a href="pro-chapter1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> What is programming </a>
+      
+      <a href="pro-chapter2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Low-level programming languages</a>
+      
+       <a href="pro-chapter3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> High-level programming languages </a>
+       
+        <a href="pro-chapter4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Program development life cycle</a>
+        
+         <a href="pro-chapter6.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Algorithm</a>
+         
+          <a href="pro-chapter7.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Flowchart</a>
+          <a href="pro-chapter8.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Pseudocode</a>
+          
+         <a href="pro-chapter9Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming In QBasic</a>
+          <a href="pro-chapter10Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To the Structure Of A QBASIC Program</a>
+          
+           <a href="pro-chapter5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming Terminologies</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+    <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Web Development</a></span>
+     
+      <span class="navv-item"><a href="programming.html" style="color: white; font-weight: bolder">Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Software Development</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+      <span class="navv-item"><a href="" style="font-weight: bolder; color: white;">
+        
+      </a></span> 
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 110%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 80px; margin-right: 0; ">Introduction To Algorithm .</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <h3 class="mainhead">*What is Algorithm*:</h3>
+          <p>
+            
+          </p>
+          <h4>How Do Algorithms Work?</h4>
+          <p>
+            
+  Algorithms are step-by-step procedures designed to solve specific problems and perform tasks efficiently in the realm of computer science and mathematics. <br>
+  These powerful sets of instructions form the backbone of modern technology and govern everything from web searches to artificial intelligence.
+<ul class="ulstyle">
+  <h3 style="font-size: 102%; font-weight: bold; color: skyblue">Here's how algorithms work:</h3>
+  <li><b class="phase">Input:</b> Algorithms take input data, which can be in various formats, such as numbers, text, or images.</li>
+  <li><b class="phase">Processing:</b> The algorithm processes the input data through a series of logical and mathematical operations, manipulating and transforming it as needed.
+</li>
+<li><b class="phase">Output:</b> After the processing is complete, the algorithm produces an output, which could be a result, a decision, or some other meaningful information.</li>
+<li><b class="phase">Efficiency:</b>  A key aspect of algorithms is their efficiency, aiming to accomplish tasks quickly and with minimal resources. <br>
+ An efficient algorithm should accomplish its task within a reasonable amount of time and with minimal computational resources. <br>
+ Efficiency is typically measured in terms of time complexity (how the runtime of an algorithm grows as the size of the input increases) and space complexity (how much memory an algorithm requires).
+</li>
+<li><b class="phase">Optimization:</b> Algorithm designers constantly seek ways to optimize their algorithms, making them faster and more reliable. <br>
+In many cases, algorithms can be optimized to improve their performance. <br>
+This optimization can involve reducing time complexity by using more efficient algorithms or data structures, or by employing clever techniques to minimize redundant computations.
+</li>
+<li> <b class="phase">Implementation:</b> Algorithms are implemented in various programming languages, enabling computers to execute them and produce desired outcomes.
+</li>
+</ul>
+  </p>
+  <p>
+<h4>What Is The Need For Algorithms?</h4>
+<ul class="ulstyle">
+    <h3 style="font-size: 102%; font-weight: bold; color: skyblue">You require algorithms for the following reasons:</h3>
+  <li><b class="phase">Scalability:</b> It aids in your understanding of scalability.  <br>
+  When you have a sizable real-world problem, you must break it down into small steps to analyze it quickly.</li>
+  <li><b class="phase">Performance</b> The real world is challenging to break down into smaller steps. <br>
+  If a problem can be easily divided into smaller steps, it indicates that the problem is feasible. <br>
+   <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> After understanding what is an algorithm, why you need an algorithm, you will look at how to write one using an example.</div>
+</div>
+  
+  </li>
+</ul>
+</p>
+<p>
+  <h4>Types Of Algorithms</h4>
+  <ul class="ulstyle">
+    <li><b class="phase">Brute Force Algorithm:</b>  A straightforward approach that exhaustively tries all possible solutions, suitable for small problem instances but may become impractical for larger ones due to its high time complexity.</li>
+    <li><b class="phase">Recursive Algorithm:</b>  A method that breaks a problem into smaller, similar subproblems and repeatedly applies itself to solve them until reaching a base case, making it effective for tasks with recursive structures.</li>
+    <li><b class="phase">Encryption Algorithm:</b> Utilized to transform data into a secure, unreadable form using cryptographic techniques, ensuring confidentiality and privacy in digital communications and transactions.</li>
+    <li><b class="phase">Backtracking Algorithm:</b>  A trial-and-error technique used to explore potential solutions by undoing choices when they lead to an incorrect outcome, commonly employed in puzzles and optimization problems.</li>
+    <li><b class="phase">Searching Algorithm:</b>  Designed to find a specific target within a dataset, enabling efficient retrieval of information from sorted or unsorted collections.</li>
+    <li><b class="phase">Sorting Algorithm:</b> Aimed at arranging elements in a specific order, like numerical or alphabetical, to enhance data organization and retrieval.</li>
+    <li><b class="phase">Hashing Algorithm:</b> Converts data into a fixed-size hash value, enabling rapid data access and retrieval in hash tables, commonly used in databases and password storage.</li>
+    <li><b class="phase">Divide and Conquer Algorithm:</b> Breaks a complex problem into smaller subproblems, solves them independently, and then combines their solutions to address the original problem effectively.</li>
+   <li><b class="phase">Greedy Algorithm:</b> Makes locally optimal choices at each step in the hope of finding a global optimum, useful for optimization problems but may not always lead to the best solution.</li>
+   <li><b class="phase">Dynamic Programming Algorithm:</b> Stores and reuses intermediate results to avoid redundant computations, enhancing the efficiency of solving complex problems.
+</li>
+<li><b class="phase">Randomized Algorithm: </b> Utilizes randomness in its steps to achieve a solution, often used in situations where an approximate or probabilistic answer suffices.</li>
+  </ul>
+  </p>
+  <h4>How To Write An Algorithm?</h4>
+  <p>
+    <p class="p">There are no well-defined standards for writing algorithms.  <br>
+    It is, however, a problem that is resource-dependent. <br>
+    Algorithms are never written with a specific programming language in mind.
+    </p>
+    <p class="p">
+    As you all know, basic code constructs such as loops like do, for, while, all programming languages share flow control such as if-else, and so on. <br>
+    An algorithm can be written using these common constructs.</p>
+    <p class="p">Algorithms are typically written in a step-by-step fashion, but this is not always the case. <br>
+    Algorithm writing is a process that occurs after the problem domain has been well-defined. That is, you must be aware of the problem domain for which you are developing a solution.</p>
+    <b class="eg">Let's see some examples on how to write algorithms.</b> <br>
+    <b style="color: deepskyblue"> Problem</b>
+     <p>Create an algorithm that multiplies two numbers and displays the output.</p>
+
+     <fieldset style="width: 100%; padding: 0; border-spacing: 0; margin-left: 5px; border-radius: 34px; z-index: 2; box-shadow: 2px 3px 4px; font-size: 92%;">
+       <legend><span><b class="eg" style="margin-left: 30px; ">Solutions</b></span></legend>
+       <ul class="ulstyle">
+         <li><b>Step 1 </b><b style="font-size: 130%">-</b> Start</li>
+        <li><b>Step 2</b><b style="font-size: 130%">-</b> declare three integers x, y & z</li>
+        <li><b>Step 3 </b><b style="font-size: 130%">-</b> define values of x & y</li>
+       <li><b>Step 4 </b><b style="font-size: 130%">-</b> multiply values of x & y</li>
+       <li><b>Step 5</b><b style="font-size: 130%">-</b> store result of step 4 to z</li>
+       <li><b>Step 6 </b><b style="font-size: 130%">-</b> print z</li>
+       <li><b>Step 6 </b><b style="font-size: 130%">-</b> Stop</li>
+       
+       </ul>
+     </fieldset>
+   <br>
+<fieldset style="width: 100%; padding: 0; border-spacing: 0; margin-left: 5px; border-radius: 34px; z-index: 2; box-shadow: 2px 3px 4px; font-size: 92%;">
+  <legend><span>  <div class="reply-container">
+
+	<div class="reply-text">  <p>Algorithms instruct programmers on how <br> to write code. <br> In addition, the algorithm can be written as:</p></div>
+</div></span></legend>
+<ul class="ulstyle">
+   <li><b>Step1</b> <b style="font-size: 130%">-</b> Start mul</li>
+   <li><b>Step2</b> <b style="font-size: 130%">-</b> get values of x & y</li>
+   <li><b>Step3</b> <b style="font-size: 130%">-</b> z ← x * y</li>
+   <li><b>Step4</b> <b style="font-size: 130%">-</b> display z</li> 
+   <li><b>Step5</b> <b style="font-size: 130%">-</b> Stop</li> 
+   </ul>
+</fieldset> <br>
+   <p class="p">
+     In algorithm design and analysis, the second method is typically used to describe an algorithm. <br>
+     It allows the analyst to analyze the algorithm while ignoring all unwanted definitions easily.  <br>
+     They can see which operations are being used and how the process is progressing.
+     <br>
+     It is optional to write step numbers. To solve a given problem, you create an algorithm. A problem can be solved in a 
+      variety of ways.
+   </p>
+   <p class="p">
+     As a result, many solution algorithms for a given problem can be derived. <br>
+     The following step is to evaluate the proposed solution algorithms and implement the most appropriate solution.
+   </p>
+   <p class="p" >
+     As you progress through this "what is an Algorithm" tutorial, you will learn about some of the components of an algorithm.
+   </p>
+  </p>
+  <h4>Qualities Of A Good Algorithm</h4>
+  <ul class="ulstyle">
+    <li><b class="phase">Efficiency:</b> A good algorithm should perform its task quickly and use minimal resources.</li>
+    <li><b class="phase">Correctness:</b> It must produce the correct and accurate output for all valid inputs.</li>
+    <li><b class="phase">Clarity: </b> The algorithm should be easy to understand and comprehend, making it maintainable and modifiable.</li>
+    <li><b class="phase">Reliability: </b> The algorithm should consistently deliver correct results under different conditions and environments.</li>
+  </ul>
+  
+  <h4>Advantages Of Algorithms</h4>
+  <ul class="ulstyle">
+    <li>Well-designed algorithms can perform complex tasks in a relatively short amount of time, making them essential for handling large-scale data processing and computational tasks.</li>
+    <li>Once an algorithm is developed, it can be reused across different applications and scenarios, saving time and effort in solving similar problems.</li>
+    <li>Algorithms can scale to handle larger input sizes without a significant increase in computation time, provided they have been designed with efficient time and space complexity.
+</li>
+  </ul>
+  <h4>Disadvantages Of Algorithms</h4>
+  <ul class="ulstyle">
+    <li>Developing complex algorithms can be challenging, requiring a deep understanding of problem domains, data structures, and computational complexity theory.</li>
+    <li>Some algorithms may consume a large amount of memory or computational resources, making them unsuitable for resource-constrained environments.</li>
+    <li>As technology evolves, algorithms may need to be updated or replaced to accommodate new requirements or take advantage of advancements in hardware and software.</li>
+  </ul>
+
+<h4>Ways/Techniques For Representing Algorithms</h4>
+<ul class="ulstyle">
+  <li><b class="phase">Pseudocode:</b> <p class="p">Most software programs are developed using a programming language, like C++ or Java. These languages have a specific syntax that must be adhered to when writing program's source code. <br>
+  Pseudocode, on the other hand, is not a programming language, but simply an informal way of describing a program and representing Algorithms. It does not require strict syntax, but instead serves as a general representation of a program's functions.</p>
+  <p class="p">
+    Since each programming language uses a unique syntax structure, understanding the code of multiple languages can be difficult. <br>
+    Pseudocode remedies this problem by using conventional syntax and basic english phrases that are universally understood.
+    <br>
+    <b class="eg">For example, a line of QBASIC code may read::</b> <b>IF i < 10 THEN i = i + 1</b> <br>
+    <b class="eg">This could be written in pseudocode as::</b> <b>
+      IF i is less than 10
+INCREMENT i by 1
+    </b> <br>
+    <b class="eg">Note::</b> <br> <b>"i is less than 10" </b> is a more natural language way of expressing the condition.<br>
+    
+<b>"INCREMENT i by 1"</b> is a more natural language way of expressing the action of increasing the value of i by 1. <br>
+ The pseudocode aims to be language-independent and focus on the logic of the algorithm.
+  </p>
+  </li>
+ <li><b class="phase">Flowchart:</b> <p class="p">A flowchart is a graphical representation of an algorithm.  <br> It uses standardized symbols to illustrate the flow of activities and decisions within a system.</p></li>
+</ul>
+<br>
+<br>
+             <!-- <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="pro-chapter4.html" class="prev-button">Previous</a>
+	<a href="pro-chapter7.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+          
+</body>
+
+</html>

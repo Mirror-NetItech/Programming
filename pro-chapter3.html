@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 550px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+    .pp{
+      text-indent: 20px;
+    }
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:58%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="programming.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Introduction to programming</a>
+      
+      <a href="pro-chapter1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> What is programming </a>
+      
+      <a href="pro-chapter2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Low-level programming languages</a>
+      
+       <a href="pro-chapter3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> High-level programming languages </a>
+       
+        <a href="pro-chapter4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Program development life cycle</a>
+        
+         <a href="pro-chapter6.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Algorithm</a>
+         
+          <a href="pro-chapter7.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Flowchart</a>
+          <a href="pro-chapter8.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Pseudocode</a>
+           <a href="pro-chapter9Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming In QBasic</a>
+          <a href="pro-chapter10Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To the Structure Of A QBASIC Program</a>
+           <a href="pro-chapter5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming Terminologies</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+     <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Web Development</a></span>
+     
+      <span class="navv-item"><a href="programming.html" style="color: white; font-weight: bolder">Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Software Development</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+      <span class="navv-item"><a href="" style="font-weight: bolder; color: white;">
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 110%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 80px; margin-right: 0; ">Introduction To High-level  Programming Language</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <h3 class="mainhead">*What is High-level Programming Languages*:</h3>
+        <p>
+          High-level programming languages are abstracted from the details of the computer's hardware, allowing programmers to focus on the logic and structure of their code without needing to understand low-level technical intricacies.
+
+        </p>
+        <h4>Advantages Of High-level Programming Languages:</h4>
+       <ul class="ulstyle">
+         <li>High-level programming languages are easy to learn, write and correct errors.</li>
+         <li>They provide better documentation so the entire program.</li>
+         <li>Programs written in High-level programming languages can be transfer from one computer to another.</li>
+       </ul>
+        <h4>Disadvantages Of High-level Programming Languages:</h4>  
+        <ul class="ulstyle">
+          <li>With High-level programming languages a long sequence of statements are to be written for every program.</li>
+          <li>Programs written in High-level programming languages are not directly executable due to the need of translation from it's language to the computers language.</li>
+        </ul>
+        <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>
+<h4>Difference Between Low-level And High-level Programming Languages</h4>
+<ul class="ulstyle">
+  <li>Low-level languages are normally used to write hardware programs <b style="font-size: 102%; color: sandybrown;">while</b> High-level languages are normally used to write application programs.</li>
+  <li>Low-level languages are difficult to learn and understand <b style="font-size: 101%; color: sandybrown">while</b> High-level languages are easy to learn and understand.</li>
+  <li>Low-level languages are difficult to debug when an error occurred in the program <b style="font-size: 101%; color: sandybrown">while</b> High-level languages are easy to debug when an error occurred in the program.</li>
+</ul>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="pro-chapter2.html" class="prev-button">Previous</a>
+	<a href="pro-chapter4.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+          
+</body>
+
+</html>

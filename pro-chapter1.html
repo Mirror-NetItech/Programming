@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 550px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 105%;
+    }
+    h4{
+      font-size: 120%;
+      font-weight: bolder;
+      color: firebrick;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    p{
+      font-size: 106%;
+    }
+    li{
+      font-size: 106%;
+    }
+    .eg{
+      font-size: 101%;
+      color: mediumblue;
+    }
+    .pp{
+      text-indent: 20px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 105%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 8px 10px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:88%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+     <a href="programming.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Introduction to programming</a>
+      
+      <a href="pro-chapter1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> What is programming </a>
+      
+      <a href="pro-chapter2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Low-level programming languages</a>
+      
+       <a href="pro-chapter3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> High-level programming languages </a>
+       
+        <a href="pro-chapter4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Program development life cycle</a>
+        
+         <a href="pro-chapter6.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Algorithm</a>
+         
+          <a href="pro-chapter7.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction to Flowchart</a>
+          <a href="pro-chapter8.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Pseudocode</a>
+           
+            <a href="pro-chapter9Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming In QBasic</a>
+          <a href="pro-chapter10Q.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To the Structure Of A QBASIC Program</a>
+           
+           <a href="pro-chapter5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Programming Terminologies</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+       <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Web Development</a></span>
+     
+      <span class="navv-item"><a href="programming.html" style="color: white; font-weight: bolder">Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">Software Development</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+      <span class="navv-item"><a href="" style="font-weight: bolder; color: white;">
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 150%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 80px; margin-right: 0; ">Introduction To Programming</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <h3 style="font-size: 120%; color: red; font-weight: bolder; padding: 0">*What is Programming*:</h3>
+          <p>Is the process of creating a set of instructions to be given to the computer to perform a task.</p>
+          <h3 style="font-size: 120%; color: red; font-weight: bolder; padding: 0">*What is a Program*:</h3>
+          <p>Is a set of instructions given to a computer to perform a specific task.</p>
+          <h3 style="font-size: 120%; color: red; font-weight: bolder; padding: 0"> *What is Programming Language*:</h3>
+          <p>Is artificial language use to write a sequence of instructions that can be run by a computer. 
+          <br>
+          Programming languages are used to write software, apps, websites, and other digital products. They're made up of a series of commands, syntax, and structure that a computer can interpret and execute.
+          </p>
+          <h4 style="font-size: 115%; color: firebrick; font-weight: bolder; padding: 0; text-decoration: underline">Types Of Programming Languages.</h4>
+          <p>
+            <b>High-level programming languages</b> <b class="eg">Examples Include:</b> ( Fortran, Lisp, COBOL, Basic, Pascal, C, SQL, C++, Ada, Perl, Python, Ruby, Java, JavaScript, PHP, C#, Scala, Rust, Swift.) <br>
+            <b>Low-level programming language</b> <b class="eg">Examples Include :</b> ( Machine and Assembly language.)
+            
+          </p>
+          <h4 style="text-decoration: underline">A Brief History Of Programming languages.</h4>
+          <p>
+Programming languages are the tools that enable humans to communicate with computers, instructing them on what tasks to perform. <br>
+Over the years, numerous programming languages have been developed, each with its own unique features and capabilities.</p>
+<p class="pp">
+<b>Early Years: Machine Code and Assembly Language</b>
+In the early days of computing, programmers had to communicate with computers using machine code, which consisted of binary instructions that were specific to the computer's architecture.  <br>
+This was a cumbersome and error-prone process. To simplify programming, assembly language was developed, allowing programmers to use mnemonic codes to represent machine instructions.
+</p>
+<p class="pp">
+
+<b>FORTRAN and the Birth of High-Level Languages</b>
+In the late 1950s, John Backus and his team at IBM created FORTRAN (Formula Translation), the first high-level programming language. <br>
+FORTRAN introduced features such as symbolic variable names and control structures, making it easier for programmers to write complex programs. <br>
+This marked the beginning of a new era in programming, as high-level languages enabled more efficient and portable code development.
+</p>
+<p class="pp">
+<b>The Rise of C and C++</b>
+In the 1970s, Dennis Ritchie developed the C programming language at Bell Labs. C became widely popular due to its efficiency, flexibility, and portability, making it a cornerstone of system programming and software development. <br> 
+Building on the success of C, Bjarne Stroustrup introduced C++ in the 1980s, adding object-oriented programming features to the language.
+</p>
+<p class="pp">
+
+<b>Scripting Languages and the Web</b>
+With the advent of the internet, scripting languages such as JavaScript and PHP emerged as essential tools for web development. <br> 
+These languages allowed developers to create dynamic and interactive web applications, shaping the modern internet landscape.
+</p>
+<p class="pp">
+<b>Java and the Era of Platform-Independent Languages</b>
+In the mid-1990s, Sun Microsystems introduced Java, a language designed for cross-platform compatibility. Java's "write once, run anywhere" mantra made it a popular choice for enterprise software development and remains widely used today.
+</p>
+<p class="pp">
+<b>Modern Languages and Paradigms</b>
+In recent years, new programming languages have emerged, each with its own focus and paradigms. <br>
+Languages like Python have gained popularity for their readability and versatility, while functional languages such as Haskell and Scala have attracted attention for their emphasis on mathematical functions and immutability.
+</p>
+<p class="pp">
+The history of programming languages is a testament to human ingenuity and innovation. <br>
+From the early days of machine code to the diverse landscape of modern languages, programming has continuously evolved to meet the needs of developers and users. <br>
+As technology advances, we can expect new languages and paradigms to continue shaping the future of programming.
+
+          </p>
+          <br>
+          
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="programming.html" class="prev-button">Previous</a>
+	<a href="pro-chapter2.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+          
+</body>
+
+</html>
